@@ -1,16 +1,129 @@
-# React + Vite
+# Inspire — Inspirational Quote Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that allows users to discover, search, filter, save, and manage inspirational quotes.
 
-Currently, two official plugins are available:
+The project was developed as part of the **Advanced Web Technology Phase-II** coursework and demonstrates React Hooks, routing, forms and validation, API integration, CRUD operations, search and filtering, error handling, responsive design, and performance optimization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* ✨ **Random Quote Generator** — Generate a new random quote.
+* 📂 **Category Filtering** — Browse quotes by Motivation, Success, Happiness, Confidence, Goals, Dreams, and Other.
+* 🔎 **Search** — Search quotes by quote text or author.
+* ❤️ **Favorites** — Add or remove quotes from your favorites.
+* ➕ **Add Quotes** — Create your own quotes with form validation.
+* ✏️ **Edit Quotes** — Update user-created quotes.
+* 🗑️ **Delete Quotes** — Remove user-created quotes.
+* 🌐 **API Integration** — Fetches additional quotes from the DummyJSON Quotes API.
+* ⚠️ **Error Handling** — Handles API failures, loading states, empty categories, and unsuccessful searches.
+* 🧭 **Routing** — Separate pages for Home, Favorites, Add Quote, and About.
+* 📱 **Responsive Design** — Designed to work across different screen sizes.
+* ⚡ **Performance Optimization** — Uses React `useMemo` to optimize quote filtering.
+* 💾 **Local Data Management** — User-created quotes and favorites are managed through React Context.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+* **React**
+* **JavaScript**
+* **React Hooks**
+* **React Router**
+* **Context API**
+* **Tailwind CSS**
+* **REST API**
+* **Vite**
+* **Git & GitHub**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API
+
+The application uses the **DummyJSON Quotes API** to retrieve additional inspirational quotes:
+
+`https://dummyjson.com/quotes?limit=30`
+
+The API provides quote text and author information. Since the API does not provide quote categories, API quotes are categorized on the client side using keyword-based content matching. Quotes that do not match the predefined categories are placed under **Other**.
+
+## Project Structure
+
+```text
+Inspirational-Quote-Generator/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── context/
+│   │   └── QuoteContext.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Favorites.jsx
+│   │   ├── AddQuote.jsx
+│   │   └── About.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ananyathakur23/Inspirational-Quote-Generator.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Inspirational-Quote-Generator
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## Phase-II Requirements Covered
+
+| Requirement              | Implementation                                         |
+| ------------------------ | ------------------------------------------------------ |
+| React Hooks              | `useState`, `useEffect`, `useMemo`, `useContext`       |
+| Routing                  | React Router                                           |
+| Forms and Validation     | Add Quote form with validation                         |
+| API Integration          | DummyJSON Quotes API                                   |
+| CRUD Operations          | Add, edit, and delete user-created quotes              |
+| Search and Filter        | Text/author search and category filtering              |
+| Error Handling           | API errors, loading states, and empty results          |
+| Responsive Design        | Responsive layouts using Tailwind CSS                  |
+| Performance Optimization | `useMemo` for filtering                                |
+| Project Testing          | Manual functional testing                              |
+| Deployment               | Can be deployed using GitHub Pages, Vercel, or Netlify |
+
+## Future Improvements
+
+* Add more quote APIs or data sources.
+* Add user authentication.
+* Store user-created quotes and favorites in a database.
+* Add automated testing.
+* Add social sharing for individual quotes.
+* Improve quote categorization using a dedicated classification system.
+
+## Author
+
+**Ananya Amar Thakur**
