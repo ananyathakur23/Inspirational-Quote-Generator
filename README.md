@@ -99,21 +99,40 @@ npm run dev
 
 Open the local URL provided by Vite in your browser.
 
+## Phase-I Requirements Covered
+
+| Requirement | Implementation |
+|---|---|
+| Problem Identification | Developed an inspirational quote generator to help users discover and manage motivational content. |
+| Requirement Analysis | Identified requirements for quote generation, categorization, search, favorites, user-created quotes, and responsive access. |
+| Use Case Identification | Users can browse, search, filter, generate, favorite, add, edit, and delete quotes. |
+| Wireframe / UI Design | Designed the application interface with a structured navigation bar, quote cards, category filters, forms, and responsive layouts. |
+| Project Folder Structure | Organized the project into pages, context, assets, and application configuration files. |
+| React Project Setup | Created the project using React and Vite. |
+| Component Creation | Implemented separate pages and reusable React components for different application features. |
+| JSX Implementation | Built the application interface using JSX and React components. |
+| Props | Used React component properties where required to pass data and functionality between components. |
+| State Management (`useState`) | Used `useState` for quote state, search, category selection, form data, loading states, errors, and UI interactions. |
+| Event Handling | Implemented click, change, submit, mouse enter, and mouse leave event handlers. |
+| Conditional Rendering | Used conditional rendering for loading states, API errors, search results, favorites, forms, and empty states. |
+| Lists and Keys | Used `.map()` with unique keys to render quote collections and navigation/category elements. |
+| Responsive User Interface | Created a responsive interface that adapts to different screen sizes. |
+
 ## Phase-II Requirements Covered
 
-| Requirement              | Implementation                                         |
-| ------------------------ | ------------------------------------------------------ |
-| React Hooks              | `useState`, `useEffect`, `useMemo`, `useContext`       |
-| Routing                  | React Router                                           |
-| Forms and Validation     | Add Quote form with validation                         |
-| API Integration          | DummyJSON Quotes API                                   |
-| CRUD Operations          | Add, edit, and delete user-created quotes              |
-| Search and Filter        | Text/author search and category filtering              |
-| Error Handling           | API errors, loading states, and empty results          |
-| Responsive Design        | Responsive layouts using Tailwind CSS                  |
-| Performance Optimization | `useMemo` for filtering                                |
-| Project Testing          | Manual functional testing                              |
-| Deployment               | Can be deployed using GitHub Pages, Vercel, or Netlify |
+| Requirement | Implementation |
+|---|---|
+| React Hooks | `useState`, `useEffect`, `useMemo`, `useContext` |
+| Routing | React Router |
+| Forms and Validation | Add Quote form with validation |
+| API Integration | DummyJSON Quotes API |
+| CRUD Operations | Add, edit, and delete user-created quotes |
+| Search and Filter | Text/author search and category filtering |
+| Error Handling | API errors, loading states, and empty results |
+| Responsive Design | Responsive layouts using Tailwind CSS |
+| Performance Optimization | `useMemo` for filtering |
+| Project Testing | Manual functional testing |
+| Deployment | Can be deployed using GitHub Pages, Vercel, or Netlify |
 
 ## Future Improvements
 
